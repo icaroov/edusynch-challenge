@@ -1,19 +1,16 @@
 import * as Styled from './styles'
 
 const Main = ({
-  title = 'Boilerplate',
+  title = 'EduSynch',
   description = 'TypeScript, NextJS e Styled Components'
 }) => {
   return (
     <Styled.Container>
-      <Styled.Logo
-        src="assets/img/logo.svg"
-        alt="Imagem de um átomo e React Avançado escrito ao lado."
-      />
+      <Styled.Logo src="/img/logo.svg" alt="Logo da EduSynch." />
       <Styled.Title>{title}</Styled.Title>
       <Styled.Description>{description}</Styled.Description>
       <Styled.Illustration
-        src="assets/img/illustration.svg"
+        src="/img/illustration.svg"
         alt="Um desenvolvedor de frente para uma tela com código."
       />
     </Styled.Container>

@@ -1,0 +1,21 @@
+{
+  "name": "EduSynch",
+  "short_name": "edusynch",
+  "icons": [
+    {
+      "src": "/img/icon-1.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/img/icon-2.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#6135D7",
+  "description": "A simple project with a Landing Page and Dashboard to EduSynch frontend challenge.",
+  "display": "fullscreen",
+  "start_url": "/",
+  "theme_color": "#6135D7"
+}

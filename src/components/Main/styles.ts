@@ -12,7 +12,7 @@ export const Container = styled.main`
   height: 100%;
 
   color: #fff;
-  background-color: #06092b;
+  background-color: ${({ theme }) => theme.colors.mainBg};
 `
 
 export const Logo = styled.img`
