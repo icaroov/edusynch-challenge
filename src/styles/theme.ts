@@ -42,6 +42,15 @@ export default {
     xlarge: '4.8rem',
     xxlarge: '5.6rem'
   },
+  breakpoints: {
+    xxsmall: `(min-width: 320px)`,
+    xsmall: `(min-width: 375px)`,
+    mobile: `(min-width: 425px)`,
+    tablet: `(min-width: 768px)`,
+    laptop: `(min-width: 1024px)`,
+    laptopL: `(min-width: 1440px)`,
+    desktop: `(min-width: 1560px)`
+  },
   layers: {
     base: 10,
     menu: 20,
