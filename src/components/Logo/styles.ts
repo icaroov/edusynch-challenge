@@ -5,12 +5,10 @@ import { LogoProps } from '.'
 const containerModifiers = {
   normal: () => css`
     width: 10rem;
-    height: 3rem;
   `,
 
   large: () => css`
     width: 20rem;
-    height: 6rem;
   `
 }
 
