@@ -31,7 +31,9 @@ export default {
     lightBg: '#E5E5E5',
     white: '#FFFFFF',
     black: '#030517',
-    lighPink: '#CFC9E9'
+    lighPink: '#CFC9E9',
+    overlay: 'rgba(36, 39, 59, 0.8)',
+    borderColor: '#a68eef'
   },
   spacings: {
     xxsmall: '0.8rem',
@@ -46,7 +48,8 @@ export default {
     xxsmall: `(min-width: 320px)`,
     xsmall: `(min-width: 375px)`,
     mobile: `(min-width: 425px)`,
-    tablet: `(min-width: 768px)`,
+    tabletMin: `(min-width: 768px)`,
+    tabletMax: `(max-width: 768px)`,
     laptop: `(min-width: 1024px)`,
     laptopL: `(min-width: 1440px)`,
     desktop: `(min-width: 1560px)`
