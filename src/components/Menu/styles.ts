@@ -17,7 +17,7 @@ export const IconContainer = styled.div`
     color: ${theme.colors.white};
     cursor: pointer;
 
-    @media screen and ${theme.breakpoints.tablet} {
+    @media screen and ${theme.breakpoints.tabletMin} {
       display: none;
     }
   `}
@@ -27,7 +27,7 @@ export const MenuNav = styled.div`
   ${({ theme }) => css`
     display: none;
 
-    @media screen and ${theme.breakpoints.tablet} {
+    @media screen and ${theme.breakpoints.tabletMin} {
       display: block;
       margin-left: ${theme.spacings.xxlarge};
     }
@@ -150,7 +150,7 @@ export const ContainerButton = styled.div`
   ${({ theme }) => css`
     display: none;
 
-    @media screen and ${theme.breakpoints.tablet} {
+    @media screen and ${theme.breakpoints.tabletMin} {
       display: flex;
       flex-grow: 1;
       justify-content: flex-end;
