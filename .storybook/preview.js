@@ -4,14 +4,17 @@ import { ThemeProvider } from 'styled-components'
 
 import GlobalStyles from 'styles/global'
 import theme from 'styles/theme'
+import { ModalProvider } from 'hooks/useModal'
 
 addDecorator(withNextRouter())
 
 export const decorators = [
   Story => (
     <ThemeProvider theme={theme}>
-      <GlobalStyles />
-      <Story />
+      <ModalProvider>
+        <GlobalStyles />
+        <Story />
+      </ModalProvider>
     </ThemeProvider>
   )
 ]

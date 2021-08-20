@@ -7,7 +7,7 @@ export default {
     radius: '0.4rem'
   },
   font: {
-    family: "'Open Sans', sans serif",
+    family: "'Open Sans', sans-serif",
     secondary:
       "Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
     light: 300,
