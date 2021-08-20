@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Modal /> should render modal when button clicked 1`] = `
+<button>
+  Show Modal
+</button>
+`;
