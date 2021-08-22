@@ -33,7 +33,7 @@ export default {
     black: '#030517',
     lighPink: '#CFC9E9',
     overlay: 'rgba(36, 39, 59, 0.8)',
-    borderColor: '#a68eef'
+    inputBg: '#9a7ffd'
   },
   spacings: {
     xxsmall: '0.8rem',
