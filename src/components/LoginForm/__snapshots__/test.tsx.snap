@@ -1,0 +1,211 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LoginForm /> should render the form correctly 1`] = `
+.c7 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 0;
+  padding: 1.5rem 4.4rem;
+  border-radius: 0.4rem;
+  font-weight: 700;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #7A57FD;
+  background: #FFD74F;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  height: 4.8rem;
+  font-size: 1.4rem;
+}
+
+.c7:hover {
+  background: #ffc70b;
+}
+
+.c5 {
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  margin-bottom: 0.5rem;
+}
+
+.c6 {
+  width: 100%;
+  max-height: 5.6rem;
+  padding: 2rem 1.5rem;
+  border-radius: 0.4rem;
+  border: 1px solid #ccc;
+  color: #FFFFFF;
+  background-color: #9a7ffd;
+  font-size: 1.8rem;
+}
+
+.c6:focus {
+  outline-width: 1px;
+  outline-style: dashed;
+  outline-color: #6135D7;
+}
+
+.c6::-webkit-input-placeholder {
+  color: #FFFFFF;
+  font-size: 1.8rem;
+}
+
+.c6::-moz-placeholder {
+  color: #FFFFFF;
+  font-size: 1.8rem;
+}
+
+.c6:-ms-input-placeholder {
+  color: #FFFFFF;
+  font-size: 1.8rem;
+}
+
+.c6::placeholder {
+  color: #FFFFFF;
+  font-size: 1.8rem;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 525px;
+  background-color: #7A57FD;
+}
+
+.c0 button {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-letter-spacing: -0.06em;
+  -moz-letter-spacing: -0.06em;
+  -ms-letter-spacing: -0.06em;
+  letter-spacing: -0.06em;
+  margin-bottom: 4.8rem;
+}
+
+.c2 {
+  color: #FFFFFF;
+  font-size: 3.4rem;
+  line-height: 118.5%;
+  font-family: Poppins,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  font-weight: 300;
+}
+
+.c3 {
+  color: #FFEAA4;
+  font-size: 3.4rem;
+  line-height: 118.5%;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c4 input {
+  margin-bottom: 2.4rem;
+}
+
+<body>
+  <div>
+    <div
+      class="c0"
+    >
+      <div
+        class="c1"
+      >
+        <h1
+          class="c2"
+        >
+          Get Started
+        </h1>
+        <h2
+          class="c3"
+        >
+          Just Login
+        </h2>
+      </div>
+      <form
+        class="c4"
+      >
+        <div
+          class=""
+        >
+          <label
+            class="c5"
+            for="Username"
+          >
+            Username
+          </label>
+          <input
+            class="c6"
+            id="Username"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          class=""
+        >
+          <label
+            class="c5"
+            for="Password"
+          >
+            Password
+          </label>
+          <input
+            class="c6"
+            id="Password"
+            type="text"
+            value=""
+          />
+        </div>
+      </form>
+      <button
+        class="c7"
+      >
+        <span>
+          Login
+        </span>
+      </button>
+    </div>
+  </div>
+</body>
+`;
