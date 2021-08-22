@@ -40,7 +40,6 @@ export const Container = styled.div`
 export const Content = styled.section`
   ${({ theme }) => css`
     white-space: normal;
-    margin: 3rem 0;
 
     font-size: ${theme.font.sizes.small};
     font-weight: ${theme.font.normal};
