@@ -1,4 +1,5 @@
 import { Story, Meta } from '@storybook/react/types-6-0'
+import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
 
 import { useModal } from 'hooks/useModal'
 
@@ -40,4 +41,28 @@ export const WithLoginForm: Story = () => {
       </Modal>
     </>
   )
+}
+
+export const MobileWithForm: Story = () => {
+  const { open, setOpen } = useModal()
+
+  return (
+    <>
+      <Button onClick={() => setOpen(!open)}>
+        <span>{open ? 'Close Modal' : 'Open Modal'}</span>
+      </Button>
+
+      <Modal>
+        <LoginForm />
+      </Modal>
+    </>
+  )
+}
+
+MobileWithForm.parameters = {
+  layout: 'fullscreen',
+  viewport: {
+    viewports: INITIAL_VIEWPORTS,
+    defaultViewport: 'iphone6'
+  }
 }

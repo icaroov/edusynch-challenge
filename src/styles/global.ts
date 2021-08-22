@@ -43,6 +43,10 @@ const GlobalStyles = createGlobalStyle`
       box-shadow: 0px 6px 30px rgb(0, 0, 0, 0.4);
       border-radius: ${theme.border.radius};
       background-color: ${theme.colors.primary};
+
+      @media screen and ${theme.breakpoints.tabletMax} {
+        padding: 3rem 1rem;
+      }
     }
 
     button {

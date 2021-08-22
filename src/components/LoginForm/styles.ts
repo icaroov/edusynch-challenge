@@ -5,12 +5,16 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
 
-    max-width: 525px;
-
     background-color: ${theme.colors.primary};
 
     button {
       align-self: flex-end;
+    }
+
+    @media screen and ${theme.breakpoints.tabletMax} {
+      button {
+        width: 100%;
+      }
     }
   `}
 `
@@ -54,29 +58,6 @@ export const Form = styled.form`
 
     input {
       margin-bottom: ${theme.spacings.small};
-    }
-  `}
-`
-
-export const CloseButton = styled.button`
-  ${({ theme }) => css`
-    border: none;
-    font-size: 0;
-    transition: 0.3s;
-    background-color: transparent;
-
-    img {
-      width: 2rem;
-      cursor: pointer;
-    }
-
-    &:focus {
-      outline-width: 1px;
-      outline-style: dashed;
-      outline-color: ${theme.colors.mainBg};
-    }
-    &:hover {
-      opacity: 0.7;
     }
   `}
 `

@@ -34,6 +34,12 @@ export const Container = styled.div`
         opacity: 0.7;
       }
     }
+
+    @media screen and ${theme.breakpoints.tabletMax} {
+      > svg {
+        top: -20px;
+      }
+    }
   `}
 `
 

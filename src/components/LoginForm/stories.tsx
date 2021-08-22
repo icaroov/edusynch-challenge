@@ -1,4 +1,5 @@
 import { Story, Meta } from '@storybook/react/types-6-0'
+
 import LoginForm from '.'
 
 export default {
@@ -6,4 +7,8 @@ export default {
   component: LoginForm
 } as Meta
 
-export const Default: Story = () => <LoginForm />
+export const Default: Story = () => (
+  <div style={{ maxWidth: '525px' }}>
+    <LoginForm />
+  </div>
+)
