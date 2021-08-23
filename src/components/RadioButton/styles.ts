@@ -4,7 +4,7 @@ import { darken } from 'polished'
 export const Container = styled.div`
   ${({ theme }) => css`
     span {
-      font-size: ${theme.font.sizes.medium};
+      font-size: ${theme.font.sizes.small};
     }
 
     @media ${theme.breakpoints.tabletMax} {
@@ -19,7 +19,7 @@ export const Label = styled.span`
     position: relative;
     display: flex;
     align-items: center;
-    padding: 1rem 5rem;
+    padding: 1rem 2rem;
 
     &::before {
       content: '';

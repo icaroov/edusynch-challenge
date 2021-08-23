@@ -1,11 +1,8 @@
 import styled, { css } from 'styled-components'
 
 export const Container = styled.menu`
-  ${({ theme }) => css`
-    display: flex;
-    align-items: center;
-    padding: ${theme.spacings.small} 0;
-  `}
+  display: flex;
+  align-items: center;
 `
 
 export const IconContainer = styled.div`
