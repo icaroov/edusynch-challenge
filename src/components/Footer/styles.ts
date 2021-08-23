@@ -12,5 +12,9 @@ export const Text = styled.p`
     font-size: ${theme.font.sizes.small};
 
     text-align: center;
+
+    @media screen and ${theme.breakpoints.tabletMax} {
+      font-size: 1rem;
+    }
   `}
 `

@@ -15,6 +15,12 @@ function App({ Component, pageProps }: AppProps) {
           <link rel="shortcut icon" href="/img/icon-2.png" />
           <link rel="apple-touch-icon" href="/img/icon-2.png" />
           <link rel="manifest" href="/manifest.json" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+            rel="stylesheet"
+          ></link>
           <meta
             name="description"
             content="A simple project with a Landing Page and Dashboard to EduSynch frontend challenge."

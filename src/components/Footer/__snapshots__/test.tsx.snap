@@ -22,6 +22,12 @@ exports[`<Footer /> should render the footer correctly 1`] = `
   text-align: center;
 }
 
+@media screen and (max-width:768px) {
+  .c1 {
+    font-size: 1rem;
+  }
+}
+
 <footer
   class="c0"
 >
