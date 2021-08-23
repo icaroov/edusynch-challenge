@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RadioButton /> should render the Radio Button 1`] = `
+.c0 span {
+  font-size: 1.4rem;
+}
+
+.c3 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.c3::before {
+  content: '';
+  height: 1.8rem;
+  width: 1.8rem;
+  border: 3px solid #FFD74F;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 2px solid transparent;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  background-color: rgba(121,85,232,0.3);
+  color: #FFFFFF;
+  font-weight: 700;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.c1:hover {
+  background-color: #663efd;
+}
+
+.c1 .c2::before {
+  background-color: #e6e6e6;
+  border-color: transparent;
+}
+
+@media (max-width:768px) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (max-width:600px) {
+  .c3 {
+    padding: 1rem;
+  }
+}
+
+<div
+  class="c0"
+>
+  <button
+    class="c1"
+    type="button"
+  >
+    <span
+      class="c2 c3"
+    >
+      Teste
+    </span>
+  </button>
+</div>
+`;

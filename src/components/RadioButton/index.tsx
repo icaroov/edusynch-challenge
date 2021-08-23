@@ -1,21 +1,18 @@
-import { useState } from 'react'
-
 import * as Styled from './styles'
+
+export type RadioType = 'teacher' | 'student'
 
 export type RadioButtonProps = {
   text: string
+  typeRadio?: 'teacher' | 'student'
+  isActive: boolean
+  onCheck: () => void
 }
 
-const RadioButton = ({ text }: RadioButtonProps) => {
-  const [checked, setChecked] = useState(false)
-
+const RadioButton = ({ text, isActive, onCheck }: RadioButtonProps) => {
   return (
     <Styled.Container>
-      <Styled.RadioBox
-        type="button"
-        isActive={checked}
-        onClick={() => setChecked(!checked)}
-      >
+      <Styled.RadioBox type="button" isActive={isActive} onClick={onCheck}>
         <Styled.Label>{text}</Styled.Label>
       </Styled.RadioBox>
     </Styled.Container>

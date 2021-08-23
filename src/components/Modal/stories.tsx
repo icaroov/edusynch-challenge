@@ -14,10 +14,10 @@ export default {
 } as Meta
 
 export const Empty: Story = () => {
-  const { open, setOpen } = useModal()
+  const { open, handleOpenModal } = useModal()
   return (
     <>
-      <Button onClick={() => setOpen(!open)}>
+      <Button onClick={handleOpenModal}>
         <span>{open ? 'Close Empty Modal' : 'Open Empty Modal'}</span>
       </Button>
 
@@ -29,10 +29,10 @@ export const Empty: Story = () => {
 }
 
 export const WithLoginForm: Story = () => {
-  const { open, setOpen } = useModal()
+  const { open, handleOpenModal } = useModal()
   return (
     <>
-      <Button onClick={() => setOpen(!open)}>
+      <Button onClick={handleOpenModal}>
         <span>{open ? 'Close Modal' : 'Open Modal'}</span>
       </Button>
 
@@ -44,11 +44,11 @@ export const WithLoginForm: Story = () => {
 }
 
 export const MobileWithForm: Story = () => {
-  const { open, setOpen } = useModal()
+  const { open, handleOpenModal } = useModal()
 
   return (
     <>
-      <Button onClick={() => setOpen(!open)}>
+      <Button onClick={handleOpenModal}>
         <span>{open ? 'Close Modal' : 'Open Modal'}</span>
       </Button>
 

@@ -15,6 +15,7 @@ const Modal = ({ children }: { children: JSX.Element }) => {
       overlayClassName="react-modal-overlay"
       className="react-modal-content"
       contentLabel="Modal"
+      ariaHideApp={false}
     >
       <Styled.Container>
         <CloseIcon aria-label="Close Modal" onClick={handleCloseModal} />

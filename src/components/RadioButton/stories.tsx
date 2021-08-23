@@ -1,4 +1,6 @@
+import { useState } from 'react'
 import { Story, Meta } from '@storybook/react/types-6-0'
+
 import RadioButton, { RadioButtonProps } from '.'
 
 export default {
@@ -9,6 +11,14 @@ export default {
   component: RadioButton
 } as Meta
 
-export const Default: Story<RadioButtonProps> = args => (
-  <RadioButton {...args} />
-)
+export const Default: Story<RadioButtonProps> = () => {
+  const [checked, setChecked] = useState(false)
+
+  return (
+    <RadioButton
+      isActive={checked}
+      onCheck={() => setChecked(!checked)}
+      text="DEFAULT"
+    />
+  )
+}
