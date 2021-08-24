@@ -3,13 +3,22 @@ import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
 
 import Dashboard from '.'
 
+import mockData from 'components/Card/mock'
+
 export default {
   title: 'Dashboard',
   component: Dashboard
 } as Meta
 
-export const Desktop: Story = () => <Dashboard />
-export const Mobile: Story = () => <Dashboard />
+export const Desktop: Story = () => (
+  <Dashboard courses={mockData} isLoading={false} />
+)
+export const Mobile: Story = () => (
+  <Dashboard courses={mockData} isLoading={false} />
+)
+export const WithLoading: Story = () => (
+  <Dashboard courses={mockData} isLoading />
+)
 
 Desktop.parameters = {
   layout: 'fullscreen'

@@ -132,3 +132,7 @@ export const SectionCard = styled.section`
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
 `
+export const LoaderContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`

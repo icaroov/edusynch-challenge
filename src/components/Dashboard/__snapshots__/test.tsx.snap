@@ -169,6 +169,7 @@ exports[`<Dashboard /> should render the Dashboard 1`] = `
   font-size: 1.8rem;
   font-weight: 700;
   color: #200E64;
+  text-transform: capitalize;
 }
 
 .c0 {
