@@ -4,7 +4,6 @@ type ModalContextData = {
   handleOpenModal: () => void
   handleCloseModal: () => void
   open: boolean
-  setOpen: React.Dispatch<React.SetStateAction<boolean>>
 }
 
 type ModalContext = {
@@ -25,9 +24,7 @@ export const ModalProvider = ({ children }: ModalContext) => {
   }
 
   return (
-    <ModalContext.Provider
-      value={{ handleCloseModal, handleOpenModal, open, setOpen }}
-    >
+    <ModalContext.Provider value={{ handleCloseModal, handleOpenModal, open }}>
       {children}
     </ModalContext.Provider>
   )
