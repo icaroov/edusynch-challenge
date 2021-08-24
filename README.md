@@ -1,16 +1,8 @@
 <p align="center">
-  <img src="https://res.cloudinary.com/ddi5agea1/image/upload/v1612315130/NextJs_qshtdn.png" alt="NextJs Logo" />
+  <img src="https://github.com/edusynch/frontend-challenge/raw/main/.github/logo.png" alt="Logo" />
 </p>
 
-<h1 align="center">Next.js ⚡ Boilerplate</h1>
-
-<div align="center">
-
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/icaroov/nextjs-typescript-boilerplate)
-
-An [**Next.js**](https://github.com/zeit/next.js/) start kit to scalable web applications, designed with simplicity for learning and real-world applicability.
-
-</div>
+<h1 align="center">Challenge - Frontend</h1>
 
 ## What is inside?
 
@@ -23,28 +15,7 @@ An [**Next.js**](https://github.com/zeit/next.js/) start kit to scalable web app
 - 📏 [Eslint](https://eslint.org/)
 - 💖 [Prettier](https://prettier.io/)
 - 🐶 [Husky](https://github.com/typicode/husky)
-- 🤖 [Dependabot](https://dependabot.com/)
 - 📁 [Plop.js](https://plopjs.com/)
-
-## Getting Started
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example https://github.com/icaroov/nextjs-typescript-boilerplate
-# or
-yarn create next-app --example https://github.com/icaroov/nextjs-typescript-boilerplate
-
-# and
-
-npm run dev
-#or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
 ## Commands
 
@@ -57,66 +28,43 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 - `storybook`: runs storybook on `localhost:6006`
 - `build-storybook`: create the build version of storybook
 - `prepare`: automatically enable the Git Hooks
-- `generate`: generates component files with this structure:
+- `generate`: generates component files
+
+## How to run
+
+```bash
+# Clone this repository
+$ git clone https://github.com/icaroov/edusynch-challenge.git
+
+# Access the project folder
+$ cd edusynch-challenge
+
+# Install dependencies
+$ yarn
+
+# Run the application
+$ yarn dev
+
+# The app will start on the port:3000 - access http://localhost:3000
+
+# To open Storybook
+$ yarn storybook
+
+# The Storybook will start on the port:6006
+
+# To run all tests
+$ yarn test
 
 
-![Plop Gif](https://res.cloudinary.com/ddi5agea1/image/upload/v1614261243/plop_m29lpk.gif)
-
-
-## Structure overview
-```
-├── .github
-|    └── workflows
-├── .husky
-├── .jest
-|    └── setup.ts
-├── .storybook
-|     └── main.js
-|     └── preview.js
-├── .vscode
-├── generators
-|   └── templates
-|   └── plopfile.js
-├── public
-├── src
-│   ├── components
-│   │   └── Main
-|   |       └── index.tsx
-|   |       └── styles.ts
-|   |       └── stories.tsx
-|   |       └── test.tsx
-|   ├── pages
-│   |   └── _app.tsx
-│   |   └── _document.tsx
-│   |   └── index.tsx
-│   ├── styles
-│   |   └── global.ts
-│   ├── types
-│   │   └── jest-styled-components.d.ts
-|
-├── .babelrc
-├── .editorconfig
-├── .eslintrc
-├── .gitignore
-├── .prettierrc
-├── LICENSE.md
-├── README.md
-├── jest.config.js
-├── next-env.d.ts
-├── package.json
-├── tsconfig.json
-└── yarn.lock
 ```
 
-## Learn More
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-To learn more about Next.js, take a look at the following resources:
+### Routes
+- `/`: home page
+- `/dashboard`: dashboard page
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### More Details
+- Fake API with [Miragejs](https://miragejs.com/): Mirage JS is an API mocking library that lets you build, test and share a complete working JavaScript application without having to rely on any backend services.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## License
-
-The [MIT License]() (MIT)
+- Generate massive amounts of fake data with [Faker](https://github.com/Marak/Faker.js#readme)
