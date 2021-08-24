@@ -47,6 +47,8 @@ export const Link = styled.a`
       text-decoration: underline;
     }
 
+    cursor: pointer;
+
     @media screen and ${theme.breakpoints.tabletMax} {
       display: none;
     }

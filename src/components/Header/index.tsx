@@ -1,3 +1,5 @@
+import NextLink from 'next/link'
+
 import Logo from 'components/Logo'
 
 import * as Styled from './styles'
@@ -6,7 +8,10 @@ const Header = () => (
   <Styled.Header>
     <Styled.LeftSide>
       <Logo aria-label="logo" />
-      <Styled.Link href="#">My Classes</Styled.Link>
+      <Styled.Link>My Classes</Styled.Link>
+      <NextLink href="/">
+        <Styled.Link>Back to Home</Styled.Link>
+      </NextLink>
     </Styled.LeftSide>
 
     <Styled.RightSide>

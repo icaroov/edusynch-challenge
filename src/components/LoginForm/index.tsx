@@ -27,6 +27,7 @@ const LoginForm = () => {
         <Input
           label="Password"
           name="Password"
+          type="password"
           value={password}
           setValue={setPassword}
         />

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Menu2 as MenuIcon } from '@styled-icons/remix-fill/Menu2'
 import { Close as CloseIcon } from '@styled-icons/material-outlined/Close'
+import NextLink from 'next/link'
 
 import { useModal } from 'hooks/useModal'
 
@@ -27,6 +28,9 @@ const Menu = () => {
         <Styled.MenuNav>
           <Styled.MenuLink href="#">How it works</Styled.MenuLink>
           <Styled.MenuLink href="#">About Us</Styled.MenuLink>
+          <NextLink href="/dashboard">
+            <Styled.MenuLink>Go to Dashboard</Styled.MenuLink>
+          </NextLink>
         </Styled.MenuNav>
 
         <Styled.ContainerButton>

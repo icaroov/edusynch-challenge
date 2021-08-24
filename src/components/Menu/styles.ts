@@ -42,6 +42,8 @@ export const MenuLink = styled.a`
     font-size: ${theme.font.sizes.medium};
     color: ${theme.colors.white};
 
+    cursor: pointer;
+
     &:hover {
       &::after {
         content: '';
