@@ -9,22 +9,39 @@ import Dashboard from 'components/Dashboard'
 const DashboardPage: NextPage = () => {
   const [courses, setCourses] = useState<Course[]>([])
   const [isLoading, setIsLoading] = useState(true)
-
-  async function fetchCourses() {
-    try {
-      const { data } = await api.get('/courses')
-      setCourses(data.courses)
-      setIsLoading(false)
-    } catch (error) {
-      console.error('Ops... Some error ocurred.', error)
-    }
-  }
+  const [currentPage, setCurrentPage] = useState(1)
+  const [totalCount, setTotalCount] = useState(0)
 
   useEffect(() => {
-    fetchCourses()
-  }, [])
+    async function fetchCourses() {
+      try {
+        const { data, headers } = await api.get('/courses', {
+          params: {
+            page: currentPage
+          }
+        })
 
-  return <Dashboard courses={courses} isLoading={isLoading} />
+        setTotalCount(Number(headers['x-total-count']))
+
+        setCourses(data.courses)
+        setIsLoading(false)
+      } catch (error) {
+        console.error('Ops... Some error ocurred.', error)
+      }
+    }
+
+    fetchCourses()
+  }, [currentPage])
+
+  return (
+    <Dashboard
+      courses={courses}
+      isLoading={isLoading}
+      totalCount={totalCount}
+      currentPage={currentPage}
+      setCurrentPage={setCurrentPage}
+    />
+  )
 }
 
 export default DashboardPage

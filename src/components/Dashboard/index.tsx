@@ -2,6 +2,7 @@ import Header from 'components/Header'
 import Footer from 'components/Footer'
 import Card from 'components/Card'
 import Loader from 'components/Loader'
+import Pagination from 'components/Pagination'
 
 import { Course } from 'lib/mirage'
 
@@ -10,9 +11,18 @@ import * as Styled from './styles'
 export type DashboardProps = {
   courses: Course[]
   isLoading: boolean
+  totalCount: number
+  currentPage: number
+  setCurrentPage: React.Dispatch<React.SetStateAction<number>>
 }
 
-const Dashboard = ({ courses, isLoading }: DashboardProps) => {
+const Dashboard = ({
+  courses,
+  isLoading,
+  totalCount,
+  currentPage,
+  setCurrentPage
+}: DashboardProps) => {
   return (
     <>
       <Styled.Container>
@@ -50,6 +60,11 @@ const Dashboard = ({ courses, isLoading }: DashboardProps) => {
               ))}
             </Styled.SectionCard>
           )}
+          <Pagination
+            totalCountOfCourses={totalCount}
+            currentPage={currentPage}
+            onPageChange={setCurrentPage}
+          />
         </Styled.Content>
       </Styled.Container>
 
