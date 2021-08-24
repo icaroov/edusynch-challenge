@@ -1,5 +1,3 @@
-import { useState } from 'react'
-
 import Button from 'components/Button'
 import Input from 'components/Input'
 import Menu from 'components/Menu'
@@ -7,14 +5,19 @@ import RadioButton, { RadioType } from 'components/RadioButton'
 
 import * as Styled from './styles'
 
-const Main = () => {
-  const [inputValue, setInputValue] = useState('')
-  const [typeRadio, setTypeRadio] = useState<RadioType>('teacher')
+type MainProps = {
+  inputValue: string
+  setInputValue: React.Dispatch<React.SetStateAction<string>>
+  typeRadio: RadioType
+  handleChangeType(handleType: RadioType): void
+}
 
-  function handleChangeType(handleType: RadioType) {
-    setTypeRadio(handleType)
-  }
-
+const Main = ({
+  inputValue,
+  typeRadio,
+  handleChangeType,
+  setInputValue
+}: MainProps) => {
   return (
     <Styled.Container data-testid="background">
       <Styled.Wrapper>
@@ -34,8 +37,8 @@ const Main = () => {
             </Styled.Paragraph>
 
             <Input
-              setValue={setInputValue}
               value={inputValue}
+              setValue={setInputValue}
               placeholder="Type here what are you looking for"
             />
 
