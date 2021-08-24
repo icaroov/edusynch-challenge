@@ -1,20 +1,51 @@
+import { useState } from 'react'
 import { Story, Meta } from '@storybook/react/types-6-0'
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
 
-import Main from '.'
+import { RadioType } from 'components/RadioButton'
+
+import Main, { MainProps } from '.'
 
 export default {
   title: 'Main',
-  component: Main,
-  args: {
-    title: 'title default',
-    description: 'description default'
-  }
+  component: Main
 } as Meta
 
-export const Desktop: Story = args => <Main {...args} />
+export const Desktop: Story<MainProps> = () => {
+  const [inputValue, setInputValue] = useState('')
+  const [typeRadio, setTypeRadio] = useState<RadioType>('teacher')
 
-export const Mobile: Story = args => <Main {...args} />
+  function handleChangeType(handleType: RadioType) {
+    setTypeRadio(handleType)
+  }
+
+  return (
+    <Main
+      inputValue={inputValue}
+      setInputValue={setInputValue}
+      typeRadio={typeRadio}
+      handleChangeType={handleChangeType}
+    />
+  )
+}
+
+export const Mobile: Story<MainProps> = () => {
+  const [inputValue, setInputValue] = useState('')
+  const [typeRadio, setTypeRadio] = useState<RadioType>('teacher')
+
+  function handleChangeType(handleType: RadioType) {
+    setTypeRadio(handleType)
+  }
+
+  return (
+    <Main
+      inputValue={inputValue}
+      setInputValue={setInputValue}
+      typeRadio={typeRadio}
+      handleChangeType={handleChangeType}
+    />
+  )
+}
 
 Mobile.parameters = {
   layout: 'fullscreen',

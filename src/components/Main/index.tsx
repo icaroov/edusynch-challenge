@@ -5,7 +5,7 @@ import RadioButton, { RadioType } from 'components/RadioButton'
 
 import * as Styled from './styles'
 
-type MainProps = {
+export type MainProps = {
   inputValue: string
   setInputValue: React.Dispatch<React.SetStateAction<string>>
   typeRadio: RadioType

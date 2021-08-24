@@ -7,7 +7,7 @@ import { Course } from 'lib/mirage'
 
 import * as Styled from './styles'
 
-type DashboardProps = {
+export type DashboardProps = {
   courses: Course[]
   isLoading: boolean
 }
