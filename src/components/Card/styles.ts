@@ -65,9 +65,12 @@ export const ButtonCard = styled.button`
 export const Description = styled.div`
   ${({ theme }) => css`
     margin: 1.6rem 0;
+
     font-family: ${theme.font.secondary};
     font-size: ${theme.font.sizes.large};
     font-weight: ${theme.font.bold};
+
     color: ${theme.colors.darkBg};
+    text-transform: capitalize;
   `}
 `

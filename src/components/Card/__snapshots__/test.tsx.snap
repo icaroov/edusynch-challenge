@@ -86,6 +86,7 @@ exports[`<Card /> should render the card 1`] = `
   font-size: 1.8rem;
   font-weight: 700;
   color: #200E64;
+  text-transform: capitalize;
 }
 
 <article
