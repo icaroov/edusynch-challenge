@@ -52,6 +52,7 @@ exports[`<Dashboard /> should render the Dashboard 1`] = `
   letter-spacing: -0.02em;
   -webkit-text-decoration: none;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .c5:hover {
@@ -348,9 +349,13 @@ exports[`<Dashboard /> should render the Dashboard 1`] = `
         </div>
         <a
           class="c5"
-          href="#"
         >
           My Classes
+        </a>
+        <a
+          class="c5"
+        >
+          Back to Home
         </a>
       </div>
       <div

@@ -52,6 +52,7 @@ exports[`<Header /> should render the header correctly 1`] = `
   letter-spacing: -0.02em;
   -webkit-text-decoration: none;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .c3:hover {
@@ -124,9 +125,13 @@ exports[`<Header /> should render the header correctly 1`] = `
     </div>
     <a
       class="c3"
-      href="#"
     >
       My Classes
+    </a>
+    <a
+      class="c3"
+    >
+      Back to Home
     </a>
   </div>
   <div

@@ -198,7 +198,7 @@ exports[`<LoginForm /> should render the form correctly 1`] = `
           <input
             class="c6"
             id="Password"
-            type="text"
+            type="password"
             value=""
           />
         </div>
