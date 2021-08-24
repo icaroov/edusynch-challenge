@@ -30,7 +30,7 @@ export const Label = styled.span`
       margin-right: 20px;
     }
 
-    @media (max-width: 600px) {
+    @media ${theme.breakpoints.tabletMax} {
       padding: 1rem;
     }
   `}

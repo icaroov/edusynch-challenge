@@ -7,7 +7,6 @@ export const Container = styled.article`
     justify-content: center;
 
     width: 100%;
-    max-width: 360px;
     height: 100%;
 
     padding: 1rem;

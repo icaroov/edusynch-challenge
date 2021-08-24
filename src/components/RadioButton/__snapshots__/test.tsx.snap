@@ -68,7 +68,7 @@ exports[`<RadioButton /> should render the Radio Button 1`] = `
   }
 }
 
-@media (max-width:600px) {
+@media (max-width:768px) {
   .c3 {
     padding: 1rem;
   }

@@ -104,7 +104,6 @@ exports[`<Dashboard /> should render the Dashboard 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
-  max-width: 360px;
   height: 100%;
   padding: 1rem;
   border-radius: 0.4rem;
@@ -170,6 +169,78 @@ exports[`<Dashboard /> should render the Dashboard 1`] = `
   font-weight: 700;
   color: #200E64;
   text-transform: capitalize;
+}
+
+.c26 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 0;
+  padding: 1.5rem 4.4rem;
+  border-radius: 0.4rem;
+  font-weight: 700;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #7A57FD;
+  background: #FFD74F;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  height: 4.8rem;
+  font-size: 1.4rem;
+}
+
+.c26:hover {
+  background: #ffc70b;
+}
+
+.c22 {
+  margin-top: 3rem;
+}
+
+.c23 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c23 p {
+  font-size: 2.8rem;
+  color: #ccc;
+}
+
+.c23 button {
+  padding: 1.5rem;
+}
+
+.c24 {
+  font-size: 1.6rem;
+}
+
+.c25 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
 }
 
 .c0 {
@@ -286,6 +357,18 @@ exports[`<Dashboard /> should render the Dashboard 1`] = `
 
 @media screen and (max-width:768px) {
 
+}
+
+@media (max-width:768px) {
+  .c23 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .c23 p {
+    font-size: 1.6rem;
+  }
 }
 
 @media screen and (max-width:768px) {
@@ -1112,6 +1195,32 @@ exports[`<Dashboard /> should render the Dashboard 1`] = `
         </div>
       </article>
     </section>
+    <div
+      class="c22"
+    >
+      <div
+        class="c23"
+      >
+        <div
+          class="c24"
+        >
+          1
+           de 
+          NaN
+        </div>
+        <div
+          class="c25"
+        >
+          <button
+            class="c26"
+          >
+            <span>
+              1
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
   </section>
 </div>
 `;
