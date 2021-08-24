@@ -1,4 +1,4 @@
-import { createServer, Factory, Model } from 'miragejs'
+import { createServer, Factory, Model, Response } from 'miragejs'
 import faker from 'faker'
 
 export interface Course {
@@ -27,14 +27,38 @@ export function makeServer() {
       })
     },
     seeds(server) {
-      server.createList('course', 6)
+      server.createList('course', 100)
     },
     routes() {
       this.namespace = 'api'
+
+      // delay to api response
       this.timing = 750
 
-      this.get('/courses')
-      this.get('/courses/:id')
+      this.get('/courses', function (schema, request) {
+        // get the first page and the limit of courses per page
+        const { page = 1, per_page = 6 } = request.queryParams
+
+        // total of courses
+        const total = schema.all('course').length
+
+        const pageStart = (Number(page) - 1) * Number(per_page)
+        const pageEnd = pageStart + Number(per_page)
+
+        // @ts-ignore
+        // return a copy of courses from the pageStart and pageEnd positions
+        const courses = this.serialize(schema.all('course')).courses.slice(
+          pageStart,
+          pageEnd
+        )
+
+        // set the 'x-total-count' in the headers
+        return new Response(
+          200,
+          { 'x-total-count': String(total) },
+          { courses }
+        )
+      })
 
       this.namespace = ''
       this.passthrough()
