@@ -2,9 +2,15 @@ import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { ThemeProvider } from 'styled-components'
 
+import { ModalProvider } from 'hooks/useModal'
 import GlobalStyles from 'styles/global'
 import theme from 'styles/theme'
-import { ModalProvider } from 'hooks/useModal'
+
+import { makeServer } from 'lib/mirage'
+
+if (process.env.NODE_ENV === 'development') {
+  makeServer()
+}
 
 function App({ Component, pageProps }: AppProps) {
   return (
