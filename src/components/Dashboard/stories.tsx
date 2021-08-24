@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
 import { Story, Meta } from '@storybook/react/types-6-0'
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
 
@@ -11,13 +12,31 @@ export default {
 } as Meta
 
 export const Desktop: Story<DashboardProps> = () => (
-  <Dashboard courses={mockData} isLoading={false} />
+  <Dashboard
+    courses={mockData}
+    isLoading={false}
+    totalCount={10}
+    currentPage={1}
+    setCurrentPage={() => {}}
+  />
 )
 export const Mobile: Story<DashboardProps> = () => (
-  <Dashboard courses={mockData} isLoading={false} />
+  <Dashboard
+    courses={mockData}
+    isLoading={false}
+    totalCount={10}
+    currentPage={1}
+    setCurrentPage={() => {}}
+  />
 )
 export const WithLoading: Story<DashboardProps> = () => (
-  <Dashboard courses={mockData} isLoading />
+  <Dashboard
+    courses={mockData}
+    isLoading
+    totalCount={10}
+    currentPage={1}
+    setCurrentPage={() => {}}
+  />
 )
 
 Desktop.parameters = {
